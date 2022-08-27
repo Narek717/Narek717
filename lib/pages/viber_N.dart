@@ -28,15 +28,11 @@ class Viber extends StatelessWidget {
         padding: const EdgeInsets.all(10.0),
         child: Column(
           children: [
-
             Padding(
-
               padding: const EdgeInsets.only(top: 15.0),
-
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const  [
-
                   Text('Viber',
                     style: TextStyle(
                         fontSize: 25,
