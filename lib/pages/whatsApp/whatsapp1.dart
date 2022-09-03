@@ -9,6 +9,7 @@ class Whatsapp1 extends StatelessWidget {
     return DefaultTabController(length: 4,
       child: Scaffold(
       appBar: AppBar(
+
         backgroundColor: Colors.teal,
         title: const Text('WhatsApp'),
         actions: const <Widget>[

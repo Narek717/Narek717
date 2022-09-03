@@ -8,7 +8,6 @@ class Chats extends StatelessWidget {
     // Info('Hendo', 'Axpers me nkarners qces', '14:44'),
     // Info('Sevo', 'Sevo ekuc kzangem xosanq', '01:55'),
   ];
-
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
