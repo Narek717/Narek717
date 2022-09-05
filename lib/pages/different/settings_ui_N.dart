@@ -6,12 +6,14 @@ class SettUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
         appBar: AppBar(
           title: const Text('Settings UI'),
           backgroundColor: Colors.deepOrange,
         ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          
           children: [
             const Text(
               'Common',

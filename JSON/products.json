@@ -1,0 +1,39 @@
+[
+  {
+    "product_name": "T-Shirt",
+    "imageUrl": "http://cdn.shopify.com/s/files/1/0280/3661/products/3005.Black.Flat.1301x1301.1_TEE_e722ca28-1f42-436e-a0ec-361779026d7d.jpg?v=1640894865",
+    "price": 100,
+    "is_available": true,
+    "materials": [
+      "cotton"
+    ]
+  },
+  {
+    "product_name": "Jacket",
+    "imageUrl": "https://avtech-indo.com/files/images/produk/produk__4331.jpg",
+    "price": 30,
+    "is_available": true,
+    "materials": [
+      "jeans"
+    ]
+  },
+  {
+    "product_name": "Pants",
+    "imageUrl": "https://thumbs.dreamstime.com/b/chino-pants-24575402.jpg",
+    "price": 120,
+    "is_available": false,
+    "materials": [
+      "cotton",
+      "jeans"
+    ]
+  },
+  {
+    "product_name": "Top",
+    "imageUrl": "https://static6.depositphotos.com/1000261/636/i/950/depositphotos_6367048-stock-photo-panama-hat.jpg",
+    "price": 10,
+    "is_available": true,
+    "materials": [
+      "cotton"
+    ]
+  }
+]
