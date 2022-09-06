@@ -22,11 +22,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
-       home: const JSON1(),
+      // home: const JSON1(),
       // home: const ListData(),
       // home: const PageOne(),
       // home: const Products(),
-      // home: const PageOne(),
+       home: const PageOne(),
       // home: const Myapp2()
       // home: const Whatsapp1(),
       // home: const HomePageWidget(),
@@ -35,4 +35,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
