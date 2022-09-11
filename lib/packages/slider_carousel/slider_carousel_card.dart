@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 class SlideCards extends StatefulWidget {
@@ -74,7 +73,10 @@ class _SlideCardsState extends State<SlideCards> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
+                            children:  [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: const [
                                 Text('Credit Card',
                                   style: TextStyle(
                                     color: Colors.white54,
@@ -83,19 +85,23 @@ class _SlideCardsState extends State<SlideCards> {
                                     fontStyle: FontStyle.italic
                                   ),
                                     ),
-                              Image(image: AssetImage('assets/images/globus.png',
-
+                                  Icon(Icons.wifi,
+                                  color: Colors.white54,
+                                  size: 25)
+                      ],
+                              ),
+                              const Image(image: AssetImage('assets/images/globus.png',
                               ),
                                 height: 55,
                               ),
-                              Text('2 3 4 8 x x x x x x x x 6 9 2 0',
+                              const Text('2 3 4 8 x x x x x x x x 6 9 2 0',
                              style: TextStyle(
                                color: Colors.white38,
                                fontWeight: FontWeight.w400,
                                fontSize: 20,
                              ),
                               ),
-                              Text('Name  Username',
+                              const Text('Name  Username',
 
                               style: TextStyle(
                                 color: Colors.black26,
