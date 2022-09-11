@@ -88,9 +88,10 @@ class _SlideCardsState extends State<SlideCards> {
                                   Icon(Icons.wifi,
                                   color: Colors.white54,
                                   size: 25)
-                      ],
+                                ],
                               ),
-                              const Image(image: AssetImage('assets/images/globus.png',
+                              const Image(
+                                image: AssetImage('assets/images/globus.png',
                               ),
                                 height: 55,
                               ),
