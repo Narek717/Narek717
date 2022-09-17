@@ -111,10 +111,7 @@ class _FeedBackState extends State<FeedBack> {
       width: double.infinity,
       child: ElevatedButton(
         onPressed: () {
-          // _pageView();
-// page.animateToPage(++questionsData.length,
-//     duration: Duration(seconds: 2),
-//     curve: Curves.bounceIn);
+
           onAnswerPressed(answerData.answerId);
           pageController.animateToPage(currentQuestionIndex,
               duration: Duration(seconds: 2),
@@ -148,17 +145,7 @@ class _FeedBackState extends State<FeedBack> {
       ),
     );
   }
-// Widget _pageView(){
-//
-//    return PageView.builder(
-//      pageSnapping: true,
-//      itemCount: questionsData.length,
-//        itemBuilder: (context, index) {
-//       return _buildQuestion(currentQuestionIndex < questionsData.length -1 ?
-//       questionsData[currentQuestionIndex++] : questionsData[currentQuestionIndex--]);
-//        }
-//     );
-// }
+
   void answerPressed(int answerId) {
     if (currentQuestionIndex == questionsData.length -1) {
       setState(() {
