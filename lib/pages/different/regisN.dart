@@ -210,7 +210,7 @@ class _MyScreenState extends State<MyScreen> {
                       '',
                     ),
                     Text(
-                      'Register',
+                      'Login in',
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 20,

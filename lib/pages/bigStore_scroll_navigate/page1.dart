@@ -30,11 +30,11 @@ class _ProductsState extends State<Products> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Expanded(
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: <Widget> [
-                    getExpanded('vegetables', 'Vegetables'),
-                    getExpanded('fruits', 'Fruits'),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget> [
+                  getExpanded('vegetables', 'Vegetables'),
+                  getExpanded('fruits', 'Fruits'),
                 ],
               ),
             ),
@@ -66,51 +66,51 @@ class _ProductsState extends State<Products> {
       String image,
       String itsText) {
     return Expanded(
-      child: FloatingActionButton(
-            child: Container(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget> [
-                  Image.asset('assets/images/$image.jpg',
-                      width: 150, height: 110),
-                  SizedBox(
-                    height: 5,
-                  ),
-                  Text(
-                    itsText,
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ],
+      child: ElevatedButton(
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(Colors.blueGrey),
+        ),
+        child: Container(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget> [
+              Image.asset('assets/images/$image.jpg',
+                  width: 150, height: 110),
+              Text(
+                itsText,
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
-              margin:  EdgeInsets.only(
-                  left: 10,top: 15, right: 10, bottom:10 ),
-              decoration:  BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(8),
-                      topLeft: Radius.circular(8),
-                      bottomRight: Radius.circular(8),
-                      bottomLeft: Radius.circular(8)
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.purple,
-                      spreadRadius: 3,
-                      blurRadius: 10,
-                    ),
-                  ]
-              ),
-            ),
-        onPressed: (){
-              Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => StorePage(itsText),
-              ),
-              );
-        },
+            ],
           ),
+          margin:  EdgeInsets.only(
+              left: 10,top: 15, right: 10, bottom:10 ),
+          decoration:  BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(8),
+                  topLeft: Radius.circular(8),
+                  bottomRight: Radius.circular(8),
+                  bottomLeft: Radius.circular(8)
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.purple,
+                  spreadRadius: 3,
+                  blurRadius: 15,
+                ),
+              ]
+          ),
+        ),
+        onPressed: (){
+          Navigator.push(context, MaterialPageRoute(
+            builder: (context) => StorePage(itsText),
+          ),
+          );
+        },
+      ),
     );
   }
 }

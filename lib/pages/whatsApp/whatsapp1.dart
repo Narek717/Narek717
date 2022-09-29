@@ -9,7 +9,6 @@ class Whatsapp1 extends StatelessWidget {
     return DefaultTabController(length: 4,
       child: Scaffold(
       appBar: AppBar(
-
         backgroundColor: Colors.teal,
         title: const Text('WhatsApp'),
         actions: const <Widget>[
@@ -40,7 +39,7 @@ class Whatsapp1 extends StatelessWidget {
         floatingActionButton: FloatingActionButton(
           onPressed: (){},
           child: const Icon(Icons.message),
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.teal,
         ),
     ),
     );

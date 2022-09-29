@@ -10,6 +10,7 @@ class Myapp1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
           body: Viber(),
@@ -40,14 +41,7 @@ class Viber extends StatelessWidget {
                         fontWeight: FontWeight.bold
                     ),
                   ),
-
-                  Text(
-                    '                       ',
-                    style: TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold
-                    ),
-                  ),
+                  Spacer(),
                   Icon(
                       Icons.photo_camera,
                       color: Colors.deepPurple
@@ -67,15 +61,12 @@ class Viber extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: const  [
                     Icon(
-                      Icons.photo,
-
-                    ),
-                    Text(
-                      '  Jack',
+                      Icons.photo),
+                    Text('  Jack',
                       style: TextStyle(
                         fontSize: 20,
                       ),
-                    )
+                    ),
                   ],
                 ),
                 style: ButtonStyle(
@@ -95,14 +86,12 @@ class Viber extends StatelessWidget {
                     children: const  [
                       Icon(
                         Icons.photo,
-
                       ),
-                      Text(
-                        '  John',
+                      Text('  John',
                         style: TextStyle(
                           fontSize: 20,
                         ),
-                      )
+                      ),
                     ],
                   ),
                   style: ButtonStyle(
@@ -122,32 +111,24 @@ class Viber extends StatelessWidget {
                   children: const  [
                     Icon(
                       Icons.photo,
-
                     ),
-                    Text(
-                      '  Bob',
+                    Text('  Bob',
                       style: TextStyle(
                         fontSize: 20,
-
                       ),
-                    )
+                    ),
                   ],
                 ),
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(Colors.black54),
                   fixedSize: MaterialStateProperty.all(const Size(400, 50)),
-
                 ),
               ),
             ),
-
             Padding(
-
               padding: const EdgeInsets.only(top: 450.0),
-
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-
                 children: const  [
 
                   Icon(

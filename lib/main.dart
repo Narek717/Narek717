@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inter_project/JSON_list/productsList.dart';
 import 'package:flutter_inter_project/pages/bigStore_scroll_navigate/page1.dart';
-import 'package:flutter_inter_project/pages/different/home_pages.dart';
 import 'package:flutter_inter_project/pages/different/regisN.dart';
 import 'package:flutter_inter_project/pages/different/settings_ui_N.dart';
 import 'package:flutter_inter_project/pages/different/viber_N.dart';
@@ -22,11 +21,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
-      // home: const JSON1(),
+       home: const JSON1(),
       // home: const ListData(),
       // home: const PageOne(),
-      // home: const Products(),
-       home: const PageOne(),
+     // home: const Products(),
+       //home: const PageOne(),
       // home: const Myapp2()
       // home: const Whatsapp1(),
       // home: const HomePageWidget(),

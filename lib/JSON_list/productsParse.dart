@@ -39,4 +39,3 @@ class Users {
     "materials": List<dynamic>.from(materials.map((x) => x)),
   };
 }
-
